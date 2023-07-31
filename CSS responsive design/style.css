@@ -1,0 +1,64 @@
+.box{
+    background-color: brown;
+  /*  width:300px;
+    height:300px; */
+
+    height:500px;
+    width:300px; 
+
+   /* height:30%;
+    width:30%;   yaha width and height same hai but box square nahi hoga b/c % me ham yaha laptop screen pe use kar rahe hai to laptop me width jyada hoti hai hai to uska % jayda hoga and height kam hoti hai to uska % kam hoga */
+}
+ /* pixel fixed hota hai and parent ki height and width ke according child yaha apni height width change nahi karta*/
+
+ /*agar % me koi bhi parent nahi hai to body will be parent*/
+
+.innerbox{
+    background-color: blue;
+   /* width:100px;
+    height:100px;*/
+
+   /* width:50%;
+    height:50%;   */
+
+    height:50vh;
+    width:50vw;
+}
+
+h1{
+  /*  font-size:50px; - yaha font size screen ki size big and small karne par change nahi hota fixed rahte hai - to ham vw de sakte hai usse size ke screen kam ya jyada karne se font size bhi change hoga*/
+
+ /* font-size: 5vw;  -yaha font bada hoga */
+
+  /*b/c yaha ham laptop me hai to usme width jyada hoti hai to yaha 1vw jyada hoga in comparison to 1vh and reverse is in mobile phone */
+ /* font-size:5vh;  -yaha font small hoga and vh me width change karne se font nahi change hoga height change karne se hoga*/
+
+ font-size: 3vmin;  /* yaha vmin vw width min mobile me hota hai to phele isme koi changes nahi hoga but jaise hi height maximum hogi mobile me ham aayenge to iski width change hogi*/
+} 
+
+
+.parent{
+    background-color: rgb(135, 185, 185);
+    width:50%;
+    font-size: 30px;
+}
+
+/* hamne yaha h1,h2 and h3 ki font-size set kar di but baad me ham chahte hai ki hame change karna hai yaha easy hai 3 hi h1 hai to ham use karte hai em not pixel ham em me parent ko change kar sakte hai and child me parent ke according size change ho jayega*/
+
+/*note- em is dependent upon parent size*/
+/*note- rem depeneds upon root size i.e screen size and 1rem=16px*/
+.h1{
+    /* font-size: 30px; */
+   /* font-size: 1em;  yaha 1em= 30px  , 1em parents ke size ke equal hota hai*/
+   font-size: 1rem;
+}
+.h2{
+   /* font-size: 20px; */
+   /*font-size: 2em; /*here 2em= 2*30= 60px*/
+   font-size: 2rem;
+}
+.h3{
+   /* font-size: 25px;*/
+   /* font-size: 1.5em;  /*yaha 1.5em= 1.5*30= 45px*/
+   font-size: 1.5rem;
+}
